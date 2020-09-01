@@ -20,6 +20,8 @@ const Title = (props) => {
         )
     }
 
+    
+
     const style={
         color: "#606770",
         cursor: "pointer",
@@ -28,18 +30,21 @@ const Title = (props) => {
         fontSize: "20px"
        }
     return ( 
-        <div>
+        <div onClick={props.click}>
             <ul>
                 <li>
-                    <a href="#!" style={style}>
+                    <a href="#!" style={style} onClick={props.click}>
                         <span>{props.title}</span>
                         <span>{Font}</span>
                     </a>
                 </li>
-                <ul>
+                {
+        props.toggle ? 
+        <div>
+            <ul>
                     <li>
                      <a href="#!">{props.strat}</a>
-                     <ListItem />
+                     {/* <ListItem input={props.header} /> */}
                     </li>
                 </ul>
                 <ul>
@@ -52,6 +57,8 @@ const Title = (props) => {
                      <a href="#!">{props.cityApi}</a>
                     </li>
                 </ul>
+        </div> : null
+    }
             </ul>
         </div>
      );

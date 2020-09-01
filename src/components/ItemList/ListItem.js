@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
-const ListItem = () => {
+const ListItem = (props) => {
     return ( 
         <div>
             <ul>
-                <li>Hello</li>
+                <li>
+         <a href="">{props.input}bbbb</a>
+                </li>
             </ul>
         </div>
      );

@@ -8,7 +8,7 @@ import ListItem from '../../ItemList/ListItem'
 
 const Title = (props) => {
 
-    const sab = props.toggle;
+    const sab = props.toggled;
     let Font;
     if(sab) {
         Font = (
@@ -39,26 +39,46 @@ const Title = (props) => {
                     </a>
                 </li>
                 {
-        props.toggle ? 
+        props.toggled ? 
         <div>
             <ul>
                     <li>
                      <a href="#!">{props.strat}</a>
-                     {/* <ListItem input={props.header} /> */}
+                     <ListItem input={props.startHeader} />
+                     <ListItem input={props.aboutPricing} />
+                     <ListItem input={props.oneCall} />
+                     <ListItem input={props.limit} />
                     </li>
                 </ul>
                 <ul>
                     <li>
                      <a href="#!">{props.header}</a>
+                     <ListItem input={props.headerOne} />
+                     <ListItem input={props.headerTwo} />
+                     <ListItem input={props.headerThree} />
+                     <ListItem input={props.headerFour} />
+                     <ListItem input={props.headerFive} />
+                     <ListItem input={props.headerSix} />
+                     <ListItem input={props.headerSeven} />
+                     <ListItem input={props.headerEight} />
+                     <ListItem input={props.placeApi} />
+                     <ListItem input={props.districtApi} />
+                     <ListItem input={props.subDistrictApi} />
+                     <ListItem input={props.cityHeader} />
+                     <ListItem input={props.unionApi} />
                     </li>
                 </ul>
                 <ul>
                     <li>
                      <a href="#!">{props.cityApi}</a>
+                     <ListItem input={props.ward} />
+                     <ListItem input={props.zone} />
+                     <ListItem input={props.wardZone} />
+                     <ListItem input={props.cityCor} />
                     </li>
                 </ul>
-        </div> : null
-    }
+                 </div> : null
+                  }
             </ul>
         </div>
      );

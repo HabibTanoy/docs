@@ -5,7 +5,7 @@ const ListItem = (props) => {
         <div>
             <ul>
                 <li>
-         <a href="">{props.input}bbbb</a>
+                  <a href="">{props.input}</a>
                 </li>
             </ul>
         </div>

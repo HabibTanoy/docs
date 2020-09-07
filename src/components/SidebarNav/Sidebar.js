@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
 import { Row, Col } from "react-bootstrap";
-import Title from '../SidebarNav/Title/Title'
+import Title from '../SidebarNav/Title/Title';
+import ApiStart from '../Api/ApiStart'
+import style from '../Api/Start.module.css'
 
 class Sidebar extends Component {
     state = { 
@@ -66,7 +68,9 @@ class Sidebar extends Component {
             // toggle: false
         }
         ],
-        toggle: false
+        toggle: false,
+        brak:"{",
+        endBrk:"}"
      }
 
     //  clickHandler = () => {
@@ -82,7 +86,7 @@ class Sidebar extends Component {
         this.setState({
           [flag]: !current_value
         });
-        console.log("Clicked")
+        // console.log("Clicked")
       };
     
     render() { 
@@ -130,10 +134,14 @@ class Sidebar extends Component {
             <div className="mt-5 pt-4">
                 <Container fluid>
                     <Row>
-                        <Col className="mt-2" sm={4}>
+                        <Col className={` pl-0 test ${style.sidebar}`} sm={4}>
+                            <div className="mt-2">
                             {MainTitle}
+                            </div>
                         </Col>
-                        <Col sm={8}>hello two</Col>
+                        <Col sm={8} className="">
+                        <ApiStart brek={this.state.brak} endBrk={this.state.endBrk} />
+                        </Col>
                     </Row>
                 </Container>
             </div>

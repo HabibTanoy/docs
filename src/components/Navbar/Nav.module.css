@@ -17,6 +17,7 @@
 
 .bgChange {
     background-color: #f9fafa;
+    border-bottom: 2px solid whitesmoke;
 }
 
 .docs {

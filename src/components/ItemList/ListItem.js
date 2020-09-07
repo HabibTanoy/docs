@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
+
 const ListItem = (props) => {
+    
     return ( 
         <div>
             <ul>
                 <li>
-                  <a href="">{props.input}</a>
+                  <a href="#!" className="main tag">{props.input}</a>
                 </li>
             </ul>
         </div>

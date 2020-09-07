@@ -27,7 +27,9 @@ const Title = (props) => {
         cursor: "pointer",
         display: "flex",
         justifyContent: "space-between",
-        fontSize: "20px"
+        fontSize: "21px",
+        // fontWeight: 'bolder',
+        fontFamily:"system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol"
        }
     return ( 
         <div onClick={props.click}>
@@ -43,7 +45,7 @@ const Title = (props) => {
         <div>
             <ul>
                     <li>
-                     <a href="#!">{props.strat}</a>
+                     <a href="#!" className="main subHeader">{props.strat}</a>
                      <ListItem input={props.startHeader} />
                      <ListItem input={props.aboutPricing} />
                      <ListItem input={props.oneCall} />
@@ -52,7 +54,7 @@ const Title = (props) => {
                 </ul>
                 <ul>
                     <li>
-                     <a href="#!">{props.header}</a>
+                     <a href="#!" className="main subHeader">{props.header}</a>
                      <ListItem input={props.headerOne} />
                      <ListItem input={props.headerTwo} />
                      <ListItem input={props.headerThree} />
@@ -70,7 +72,7 @@ const Title = (props) => {
                 </ul>
                 <ul>
                     <li>
-                     <a href="#!">{props.cityApi}</a>
+                     <a href="#!" className="main subHeader">{props.cityApi}</a>
                      <ListItem input={props.ward} />
                      <ListItem input={props.zone} />
                      <ListItem input={props.wardZone} />

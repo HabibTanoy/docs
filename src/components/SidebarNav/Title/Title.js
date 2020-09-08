@@ -35,7 +35,7 @@ const Title = (props) => {
         <div onClick={props.click}>
             <ul>
                 <li>
-                    <a href="#!" style={style} onClick={props.click}>
+                    <a  style={style} onClick={props.click}>
                         <span>{props.title}</span>
                         <span>{Font}</span>
                     </a>
@@ -45,7 +45,7 @@ const Title = (props) => {
         <div>
             <ul>
                     <li>
-                     <a href="#!" className="main subHeader">{props.strat}</a>
+                     <a  className="main subHeader">{props.strat}</a>
                      <ListItem input={props.startHeader} />
                      <ListItem input={props.aboutPricing} />
                      <ListItem input={props.oneCall} />
@@ -54,7 +54,7 @@ const Title = (props) => {
                 </ul>
                 <ul>
                     <li>
-                     <a href="#!" className="main subHeader">{props.header}</a>
+                     <a  className="main subHeader">{props.header}</a>
                      <ListItem input={props.headerOne} />
                      <ListItem input={props.headerTwo} />
                      <ListItem input={props.headerThree} />
@@ -72,7 +72,7 @@ const Title = (props) => {
                 </ul>
                 <ul>
                     <li>
-                     <a href="#!" className="main subHeader">{props.cityApi}</a>
+                     <a  className="main subHeader">{props.cityApi}</a>
                      <ListItem input={props.ward} />
                      <ListItem input={props.zone} />
                      <ListItem input={props.wardZone} />

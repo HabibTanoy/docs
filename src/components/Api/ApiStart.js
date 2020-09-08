@@ -20,21 +20,104 @@ const ApiStart = (props) => {
                     <div>
                     <span>{props.brek}</span>
                     </div>
+                    <div className="ml-4">
                     <div>
                     <span>"message":</span>
-                    </div>
-                    <div>
-                    <span>"API LIMIT EXCEEDED",</span>
+                    <span> "API LIMIT EXCEEDED",</span>
                     </div>
                     <div>
                     <span>"status": 429</span> 
                     </div> 
+                    </div>
                     <div>
                     <span>{props.endBrk}</span>
                     </div>
-                    <button type="button" className={style.copyBtn}>Copy</button>  
+                    <button type="button" className="">Copy</button>  
                 </code>
             </pre>
+            </div>
+
+            <strong className={style.limit}>Invalid or No Regsitered Key</strong>
+            <div className="mt-3">
+            <pre className={style.coding}>
+                <code>
+                    <div>
+                    <span>{props.brek}</span>
+                    </div>
+                    <div className="ml-4">
+                    <div>
+                    <span>"message":</span>
+                    <span> "Invalid or No Registered Key",</span>
+                    </div>
+                    <div>
+                    <span>"status": 401</span> 
+                    </div> 
+                    </div>
+                    <div>
+                    <span>{props.endBrk}</span>
+                    </div>
+                    <button type="button" className="">Copy</button>  
+                </code>
+            </pre>
+            </div>
+
+            <strong className={style.limit}>Missing Parameter</strong>
+            <div className="mt-3">
+            <pre className={style.coding}>
+                <code>
+                    <div>
+                    <span>{props.brek}</span>
+                    </div>
+                    <div className="ml-4">
+                    <div>
+                    <span>"message":</span>
+                    <span> "Invalid or No Registered Key",</span>
+                    </div>
+                    <div>
+                    <span>"status": 401</span> 
+                    </div> 
+                    </div>
+                    <div>
+                    <span>{props.endBrk}</span>
+                    </div>
+                    <button type="button" className="">Copy</button>  
+                </code>
+            </pre>
+            </div>
+
+            <strong className={style.limit}>Payment Exception</strong>
+            <div className="mt-3">
+            <pre className={style.coding}>
+                <code>
+                    <div>
+                    <span>{props.brek}</span>
+                    </div>
+                    <div className="ml-4">
+                    <div>
+                    <span>"message":</span>
+                    <span> "Invalid or No Registered Key",</span>
+                    </div>
+                    <div>
+                    <span>"status": 401</span> 
+                    </div> 
+                    </div>
+                    <div>
+                    <span>{props.endBrk}</span>
+                    </div>
+                    <button type="button" className="">Copy</button>  
+                </code>
+            </pre>
+            </div>
+            <h2 className={`mt-3 mb-3 ${style.intro}`}>Rate Limit</h2>
+            <p className="mt-3">60 Requests per minute</p>
+
+            <h2 className={`mt-3 mb-3 ${style.intro}`}>API Usage Clarification</h2>
+            <p className="mt-3">A single API request and a single API call are not always the same. A single API request to the server might call multiple APIs. An API might depend on other internal APIs to deliver the desired response. The number of call depends on the number of parameters of a request and the number of internal API calls needed to make to provide the desired response. For instance, A single request to Rupantor API results in two API calls since Rupantor API uses geocode API to operate.</p>
+            <div className={`mb-4 ${style.button}`}>
+                <a href="" className={style.next}>
+                    <h5 className={style.onlyNext}>Next</h5>
+                    <h4 className={`mb-0 ${style.rev}`}>Reverse Geocode</h4>
+                </a>
             </div>
         </div>
      );

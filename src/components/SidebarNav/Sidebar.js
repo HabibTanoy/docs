@@ -4,6 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import Title from '../SidebarNav/Title/Title';
 import ApiStart from '../Api/ApiStart'
 import style from '../Api/Start.module.css'
+import { Route } from 'react-router-dom'
 
 class Sidebar extends Component {
     state = { 
@@ -29,8 +30,9 @@ class Sidebar extends Component {
             ward:"Ward by Geo location",
             zone:"Zone by Geo location",
             wardZone:"Ward & Zone by Geolocation",
-            cityCor:"City Corporation by Geolocation"
+            cityCor:"City Corporation by Geolocation",
             // toggle: false
+            url:""
             },
             {title:"JavaScript Library", 
             started:"Getting started",
@@ -70,7 +72,8 @@ class Sidebar extends Component {
         ],
         toggle: false,
         brak:"{",
-        endBrk:"}"
+        endBrk:"}",
+        
      }
 
     //  clickHandler = () => {
@@ -125,6 +128,7 @@ class Sidebar extends Component {
                    zone={titles.zone}
                    wardZone={titles.wardZone}
                    cityCor={titles.cityCor}
+                   url={titles.url}
                    />
                )
                
@@ -140,7 +144,14 @@ class Sidebar extends Component {
                             </div>
                         </Col>
                         <Col sm={8} className="">
+                        {/* <ApiStart brek={this.state.brak} endBrk={this.state.endBrk} /> */}
+                        {/* <Route path="/rev" component={ApiStart}  /> */}
+                        <Route
+                           path='/'
+                          render={(props) => (
                         <ApiStart brek={this.state.brak} endBrk={this.state.endBrk} />
+                         )}
+                         />
                         </Col>
                     </Row>
                 </Container>

@@ -29,9 +29,9 @@
 .coding {
     color: rgb(191, 199, 213);
     background-color: rgb(41, 45, 62);
-    padding: 0;
     border-radius: 5px;
-    padding: 1.25rem 1.5rem;
+    padding: 1.5rem 1.5rem;
+    padding-bottom: 0px;
 }
 
 .copyBtn {
@@ -42,13 +42,13 @@
     padding: 4px 8px;
     color:#d6deeb;
     /* opacity:0; */
-    right: 30px;
-    bottom: 105px;
-    position: absolute;
+    left: 94%;
+    bottom: 88px;
+    position: relative;
     /* visibility: hidden; */
 }
 
-.button {
+.bttn {
     border: 1px solid #dadde1;
     border-radius: 5px;
     border-color: #dadde1;
@@ -61,7 +61,7 @@
     text-decoration: none !important;
 }
 
-.button:hover {
+.bttn:hover {
     border-color: #2ddbac;
 }
 
@@ -76,4 +76,21 @@
     color: #2ddbac;
     font-weight: 600;
     line-height: 20px;
+}
+
+.textColor {
+    color: #f1fa8c;
+}
+
+.smsColor {
+    color: #f8f8f2;
+}
+
+.get {
+    font-size: 20px;
+    background-color: #2ddbac;
+    color: #fff;
+    padding: 3px 8px ;
+    margin: 5px;
+    font-weight: lighter;
 }

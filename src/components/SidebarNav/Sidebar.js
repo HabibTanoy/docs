@@ -4,6 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import Title from '../SidebarNav/Title/Title';
 import ApiStart from '../Api/ApiStart'
 import style from '../Api/Start.module.css'
+import RevGeo from '../Api/Reverse/RevGeo'
 import { Route } from 'react-router-dom'
 
 class Sidebar extends Component {
@@ -147,11 +148,12 @@ class Sidebar extends Component {
                         {/* <ApiStart brek={this.state.brak} endBrk={this.state.endBrk} /> */}
                         {/* <Route path="/rev" component={ApiStart}  /> */}
                         <Route
-                           path='/'
+                           path='/API'
                           render={(props) => (
                         <ApiStart brek={this.state.brak} endBrk={this.state.endBrk} />
                          )}
                          />
+                         <Route path='/JS' component={RevGeo} />
                         </Col>
                     </Row>
                 </Container>
